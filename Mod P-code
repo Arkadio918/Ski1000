@@ -1,0 +1,94 @@
+	getlocal1
+	getproperty QName(PackageNamespace(""),"ctrlKey")
+	iftrue IfCtrlTrue
+IfCtrlTrue:
+	getlocal1
+	getproperty QName(PackageNamespace(""),"delta")
+	pushshort 0
+	ifngt FroI1kSell
+	pushshort 0
+	setlocal2
+	jump FroI1kBuy
+FroI1kBuy:
+	getlocal2
+	pushshort 1000
+	iflt BuySkillX1K
+	jump RenderButtonIDK
+BuySkillX1K:
+	label
+	getlocal0
+	getlocal1
+	getproperty QName(PackageNamespace(""),"target")
+	getproperty Multiname("parent",[PrivateNamespace("com.giab.games.gcfw.selector:PnlSkills"),PackageNamespace(""),PrivateNamespace("PnlSkills.as$729"),PackageNamespace("com.giab.games.gcfw.selector"),PackageInternalNs("com.giab.games.gcfw.selector"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.giab.games.gcfw.selector:PnlSkills"),StaticProtectedNs("com.giab.games.gcfw.selector:PnlSkills")])
+	getproperty Multiname("id",[PrivateNamespace("com.giab.games.gcfw.selector:PnlSkills"),PackageNamespace(""),PrivateNamespace("PnlSkills.as$729"),PackageNamespace("com.giab.games.gcfw.selector"),PackageInternalNs("com.giab.games.gcfw.selector"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.giab.games.gcfw.selector:PnlSkills"),StaticProtectedNs("com.giab.games.gcfw.selector:PnlSkills")])
+	callpropvoid QName(PackageNamespace(""),"buySkill"), 1
+	inclocal_i 2
+RenderButtonIDK:
+	getlocal0
+	callpropvoid QName(PackageNamespace(""),"renderSkillButtons"), 0
+	getlocal0
+	getlocal1
+	getproperty QName(PackageNamespace(""),"target")
+	getproperty Multiname("parent",[PrivateNamespace("com.giab.games.gcfw.selector:PnlSkills"),PackageNamespace(""),PrivateNamespace("PnlSkills.as$729"),PackageNamespace("com.giab.games.gcfw.selector"),PackageInternalNs("com.giab.games.gcfw.selector"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.giab.games.gcfw.selector:PnlSkills"),StaticProtectedNs("com.giab.games.gcfw.selector:PnlSkills")])
+	getproperty Multiname("id",[PrivateNamespace("com.giab.games.gcfw.selector:PnlSkills"),PackageNamespace(""),PrivateNamespace("PnlSkills.as$729"),PackageNamespace("com.giab.games.gcfw.selector"),PackageInternalNs("com.giab.games.gcfw.selector"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.giab.games.gcfw.selector:PnlSkills"),StaticProtectedNs("com.giab.games.gcfw.selector:PnlSkills")])
+	callpropvoid QName(PackageNamespace(""),"renderInfoPanelSkill"), 1
+	getlocal1
+	getproperty QName(PackageNamespace(""),"target")
+	getproperty Multiname("parent",[PrivateNamespace("com.giab.games.gcfw.selector:PnlSkills"),PackageNamespace(""),PrivateNamespace("PnlSkills.as$729"),PackageNamespace("com.giab.games.gcfw.selector"),PackageInternalNs("com.giab.games.gcfw.selector"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.giab.games.gcfw.selector:PnlSkills"),StaticProtectedNs("com.giab.games.gcfw.selector:PnlSkills")])
+	getproperty Multiname("frame",[PrivateNamespace("com.giab.games.gcfw.selector:PnlSkills"),PackageNamespace(""),PrivateNamespace("PnlSkills.as$729"),PackageNamespace("com.giab.games.gcfw.selector"),PackageInternalNs("com.giab.games.gcfw.selector"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.giab.games.gcfw.selector:PnlSkills"),StaticProtectedNs("com.giab.games.gcfw.selector:PnlSkills")])
+	getlocal1
+	getproperty QName(PackageNamespace(""),"target")
+	getproperty Multiname("parent",[PrivateNamespace("com.giab.games.gcfw.selector:PnlSkills"),PackageNamespace(""),PrivateNamespace("PnlSkills.as$729"),PackageNamespace("com.giab.games.gcfw.selector"),PackageInternalNs("com.giab.games.gcfw.selector"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.giab.games.gcfw.selector:PnlSkills"),StaticProtectedNs("com.giab.games.gcfw.selector:PnlSkills")])
+	getproperty Multiname("frame",[PrivateNamespace("com.giab.games.gcfw.selector:PnlSkills"),PackageNamespace(""),PrivateNamespace("PnlSkills.as$729"),PackageNamespace("com.giab.games.gcfw.selector"),PackageInternalNs("com.giab.games.gcfw.selector"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.giab.games.gcfw.selector:PnlSkills"),StaticProtectedNs("com.giab.games.gcfw.selector:PnlSkills")])
+	getproperty Multiname("currentFrame",[PrivateNamespace("com.giab.games.gcfw.selector:PnlSkills"),PackageNamespace(""),PrivateNamespace("PnlSkills.as$729"),PackageNamespace("com.giab.games.gcfw.selector"),PackageInternalNs("com.giab.games.gcfw.selector"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.giab.games.gcfw.selector:PnlSkills"),StaticProtectedNs("com.giab.games.gcfw.selector:PnlSkills")])
+	pushshort 2
+	equals
+	iffalse FalseX1
+	pushshort 1
+	coerce_a
+	jump JumpX1
+FalseX1:
+	pushshort 3
+	coerce_a
+JumpX1:
+	callpropvoid Multiname("gotoAndStop",[PrivateNamespace("com.giab.games.gcfw.selector:PnlSkills"),PackageNamespace(""),PrivateNamespace("PnlSkills.as$729"),PackageNamespace("com.giab.games.gcfw.selector"),PackageInternalNs("com.giab.games.gcfw.selector"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.giab.games.gcfw.selector:PnlSkills"),StaticProtectedNs("com.giab.games.gcfw.selector:PnlSkills")]), 1
+	getlocal1
+	getproperty QName(PackageNamespace(""),"target")
+	getproperty Multiname("parent",[PrivateNamespace("com.giab.games.gcfw.selector:PnlSkills"),PackageNamespace(""),PrivateNamespace("PnlSkills.as$729"),PackageNamespace("com.giab.games.gcfw.selector"),PackageInternalNs("com.giab.games.gcfw.selector"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.giab.games.gcfw.selector:PnlSkills"),StaticProtectedNs("com.giab.games.gcfw.selector:PnlSkills")])
+	getproperty Multiname("mcPlus",[PrivateNamespace("com.giab.games.gcfw.selector:PnlSkills"),PackageNamespace(""),PrivateNamespace("PnlSkills.as$729"),PackageNamespace("com.giab.games.gcfw.selector"),PackageInternalNs("com.giab.games.gcfw.selector"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.giab.games.gcfw.selector:PnlSkills"),StaticProtectedNs("com.giab.games.gcfw.selector:PnlSkills")])
+	getlocal0
+	getlocal1
+	getproperty QName(PackageNamespace(""),"target")
+	getproperty Multiname("parent",[PrivateNamespace("com.giab.games.gcfw.selector:PnlSkills"),PackageNamespace(""),PrivateNamespace("PnlSkills.as$729"),PackageNamespace("com.giab.games.gcfw.selector"),PackageInternalNs("com.giab.games.gcfw.selector"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.giab.games.gcfw.selector:PnlSkills"),StaticProtectedNs("com.giab.games.gcfw.selector:PnlSkills")])
+	getproperty Multiname("id",[PrivateNamespace("com.giab.games.gcfw.selector:PnlSkills"),PackageNamespace(""),PrivateNamespace("PnlSkills.as$729"),PackageNamespace("com.giab.games.gcfw.selector"),PackageInternalNs("com.giab.games.gcfw.selector"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.giab.games.gcfw.selector:PnlSkills"),StaticProtectedNs("com.giab.games.gcfw.selector:PnlSkills")])
+	callproperty QName(PackageNamespace(""),"canBuySkill"), 1
+	setproperty Multiname("visible",[PrivateNamespace("com.giab.games.gcfw.selector:PnlSkills"),PackageNamespace(""),PrivateNamespace("PnlSkills.as$729"),PackageNamespace("com.giab.games.gcfw.selector"),PackageInternalNs("com.giab.games.gcfw.selector"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.giab.games.gcfw.selector:PnlSkills"),StaticProtectedNs("com.giab.games.gcfw.selector:PnlSkills")])
+	getlocal1
+	getproperty QName(PackageNamespace(""),"target")
+	getproperty Multiname("parent",[PrivateNamespace("com.giab.games.gcfw.selector:PnlSkills"),PackageNamespace(""),PrivateNamespace("PnlSkills.as$729"),PackageNamespace("com.giab.games.gcfw.selector"),PackageInternalNs("com.giab.games.gcfw.selector"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.giab.games.gcfw.selector:PnlSkills"),StaticProtectedNs("com.giab.games.gcfw.selector:PnlSkills")])
+	getproperty Multiname("mcMinus",[PrivateNamespace("com.giab.games.gcfw.selector:PnlSkills"),PackageNamespace(""),PrivateNamespace("PnlSkills.as$729"),PackageNamespace("com.giab.games.gcfw.selector"),PackageInternalNs("com.giab.games.gcfw.selector"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.giab.games.gcfw.selector:PnlSkills"),StaticProtectedNs("com.giab.games.gcfw.selector:PnlSkills")])
+	getlocal0
+	getlocal1
+	getproperty QName(PackageNamespace(""),"target")
+	getproperty Multiname("parent",[PrivateNamespace("com.giab.games.gcfw.selector:PnlSkills"),PackageNamespace(""),PrivateNamespace("PnlSkills.as$729"),PackageNamespace("com.giab.games.gcfw.selector"),PackageInternalNs("com.giab.games.gcfw.selector"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.giab.games.gcfw.selector:PnlSkills"),StaticProtectedNs("com.giab.games.gcfw.selector:PnlSkills")])
+	getproperty Multiname("id",[PrivateNamespace("com.giab.games.gcfw.selector:PnlSkills"),PackageNamespace(""),PrivateNamespace("PnlSkills.as$729"),PackageNamespace("com.giab.games.gcfw.selector"),PackageInternalNs("com.giab.games.gcfw.selector"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.giab.games.gcfw.selector:PnlSkills"),StaticProtectedNs("com.giab.games.gcfw.selector:PnlSkills")])
+	callproperty QName(PackageNamespace(""),"canSellSkill"), 1
+	setproperty Multiname("visible",[PrivateNamespace("com.giab.games.gcfw.selector:PnlSkills"),PackageNamespace(""),PrivateNamespace("PnlSkills.as$729"),PackageNamespace("com.giab.games.gcfw.selector"),PackageInternalNs("com.giab.games.gcfw.selector"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.giab.games.gcfw.selector:PnlSkills"),StaticProtectedNs("com.giab.games.gcfw.selector:PnlSkills")])
+FroI1kSell:
+	pushshort 0
+	setlocal2
+	jump FroI1kSellX2
+FroI1kSellX2:
+	getlocal2
+	pushshort 1000
+	iflt SellSkillX1k
+SellSkillX1k:
+	label
+	getlocal0
+	getlocal1
+	getproperty QName(PackageNamespace(""),"target")
+	getproperty Multiname("parent",[PrivateNamespace("com.giab.games.gcfw.selector:PnlSkills"),PackageNamespace(""),PrivateNamespace("PnlSkills.as$729"),PackageNamespace("com.giab.games.gcfw.selector"),PackageInternalNs("com.giab.games.gcfw.selector"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.giab.games.gcfw.selector:PnlSkills"),StaticProtectedNs("com.giab.games.gcfw.selector:PnlSkills")])
+	getproperty Multiname("id",[PrivateNamespace("com.giab.games.gcfw.selector:PnlSkills"),PackageNamespace(""),PrivateNamespace("PnlSkills.as$729"),PackageNamespace("com.giab.games.gcfw.selector"),PackageInternalNs("com.giab.games.gcfw.selector"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.giab.games.gcfw.selector:PnlSkills"),StaticProtectedNs("com.giab.games.gcfw.selector:PnlSkills")])
+	callpropvoid QName(PackageNamespace(""),"sellSkill"), 1
+	inclocal_i 2
+	
